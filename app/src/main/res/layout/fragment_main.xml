@@ -1,0 +1,88 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.example.moviesearch.viewmodel.MainViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:layout_centerVertical="true"
+            android:id="@+id/progressBar"
+            android:layout_gravity="center"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+
+        <RelativeLayout
+            android:id="@+id/constraintLayout"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/image_2" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/calander"
+            android:text="title"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"
+            />
+
+        <ImageView
+            android:id="@+id/calander"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_date_range_black_24dp"
+            />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="20dp"
+            android:layout_toLeftOf="@+id/calander"
+            android:textColor="@android:color/white"
+            android:layout_margin="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/zoom"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+           android:layout_margin="10dp"
+            android:src="@drawable/ic_zoom_in_black_24dp"
+
+            />
+
+
+    </RelativeLayout>
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,36 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.example.moviesearch.viewmodel.MainViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.moviesearch.ui.DetailsFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+        <ImageView
+            android:layout_below="@+id/toolbar"
+            android:id="@+id/imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/image_2"
+            android:scaleType="fitXY"
+            android:text="@string/hello_blank_fragment" />
+
+        <VideoView
+            android:layout_below="@+id/toolbar"
+            android:id="@+id/videoview"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/image_2"
+            />
+
+    </RelativeLayout>
+</layout>
